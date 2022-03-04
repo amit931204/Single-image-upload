@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice js</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <script>
+            var str ="This is string";
+            console.log(str);
+
+            //First occurence of substring
+            var position = str.indexOf('is');
+            console.log(position)
+
+            //Last occurence of substring
+            position = str.lastIndexOf('is');
+            console.log(position)
+
+            //substring from a string
+            var substr=str.slice(1,6);
+            console.log(substr)
+
+            //Callback function
+            
+            function greeting(name) {
+            alert('Hello ' + name);
+            }
+
+            function processUserInput(callback) {
+            var name = prompt('Please enter your name.');
+            callback(name);
+            }
+
+            processUserInput(greeting);
+
+            
+        </script>
+    </body>
+</html>
